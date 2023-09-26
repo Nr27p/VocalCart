@@ -14,9 +14,10 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import Link from '@mui/material/Link';
+// import Link from '@mui/material/Link';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import './Album.css';
+import { Link } from 'react-router-dom';
 // import {SignIn} from './SignIn';
 // import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 
@@ -56,11 +57,11 @@ export default function Album() {
           <Typography variant="h3" color="inherit" noWrap>
             VocalCart
           </Typography>
-         <Button variant="outlined,h2" color='inherit'>
+         <Button variant="outlined,h2" color='inherit' component={Link} to="/login">
           {/* <Route path="/sign-in.js" element={<SignIn />} />*/}
           {/* <Link href="sign-in.js" variant="outlined,h3" color='inherit'> */}
           Sign-in</Button>
-          <Button variant="outlined,h2" color='inherit' className='left-align'>Registration</Button>
+          <Button variant="outlined,h2" color='inherit' className='left-align' component={Link} to="/register">Registration</Button>
           
           {/* </Stack> */}
         </Toolbar>
@@ -97,7 +98,7 @@ export default function Album() {
               justifyContent="center"
             >
               <Button variant="contained">Click to on Mic</Button>
-              <Button variant="outlined">Search</Button>
+              <Button variant="outlined" component={Link} to="/search">Search</Button>
             </Stack>
           </Container>
           </div>

@@ -1,18 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import App from './App';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Album from './Album';
-import SignIn from './SignIn';
-import SignUp from './SignUp';
+// import Album from './Album';
+// import SignIn from './SignIn';
+// import SignUp from './SignUp';
+// import ResultPage from './result';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Album />
+    {/* <Album /> */}
     {/* <SignIn/> */}
     {/* <SignUp/> */}
+    <App/>
+    {/* <ResultPage/> */}
   </React.StrictMode>
 );
 
